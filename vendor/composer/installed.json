@@ -193,5 +193,30 @@
         },
         "type": "webroot",
         "installation-source": "dist"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce",
+        "version": "2.1.12",
+        "version_normalized": "2.1.12.0",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/woocommerce/",
+            "reference": "tags/2.1.12"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/woocommerce.2.1.12.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "replace": {
+            "wpackagist/woocommerce": "self.version"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "http://wordpress.org/plugins/woocommerce/"
     }
 ]
